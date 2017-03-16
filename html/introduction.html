@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="Keywords" content="全屏">
+		<meta name="Description" content="百色学院介绍">
+		<meta name="Author" content="zhangxiaoyan">
+		<link href="../css/intro.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE9]-->
+		<script type="text/javascript" src="../js/html5shiv.min.js"></script>
+		<!--[endif]-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.fullPage.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="nav_right">
+			<ul class="clearfix">
+				<li><a href="index.html">首页</a></li>
+				<li><a>详情</a></li>
+				<li><a>内容</a></li>
+				<li><a>关于</a></li>
+			</ul>
+		</div>
+		<div id="fullpage">
+			<div class="section firstPage" id="firstPage">
+				<section class="pageLogo"><img src="../img/logo.png" alt="logo" /></section>
+				<section class="motto zyxm"></section>
+				<section class="motto dgyj"></section>
+				<section class="firstpImg">
+					<img class="schoolImg" src="../img/index/tu1.jpg" alt="百色学院官网"/>
+					<section class="imgLine lineOne topLine"></section>
+					<section class="imgLine lineOne bottomLine"></section>
+					<section class="imgLine lineTwo leftLine"></section>
+					<section class="imgLine lineTwo rightLine"></section>
+				</section>
+			
+			</div>
+			<div class="section secondPage" id="secondPage">
+				<section class="secondLeft" id="introWords">
+					<p>秉承着前人的优良传统，</p>
+					<p>在继承中创新，</p>
+					<p>在创新中发展，</p>
+					<p>在发展中不断追求卓越、</p>
+					<p>创造新的辉煌。</p>
+				</section>
+				<section class="secondRight">
+					<div class="fullBox"></div>
+					<img src="../img/index/song.jpg" alt="校歌" />
+				</section>
+			</div>
+			<div class="section thirdPage" id="thirdPage">
+				
+			</div>
+			<div class="section fourthPage" id="fourthPage">
+				<section>
+					<div></div>
+					<span class="returnIndex">返回首页</span>
+				</section>
+			</div>
+
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$("#fullpage").fullpage({
+				sectionsColor: ["black", "rgba(0,0,0,0.9)", "salmon", "skyblue"],
+				 //执行动画函数
+                afterLoad:function(anchorLink,index){
+                    //先清除所有动画
+                    $(".section").removeClass('animation');
+                    //延时100毫秒执行动画
+                    setTimeout(function(){
+                        $(".section").eq(index-1).addClass('animation');
+                    
+                    }, 100);
+                    
+                    
+
+                }
+			});
+			
+		});
+		
+	</script>
+
+</html>

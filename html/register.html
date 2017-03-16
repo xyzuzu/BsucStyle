@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link type="text/css" rel="stylesheet" href="../css/base.css" />
+		<link type="text/css" rel="stylesheet" href="../css/ionicons.min.css" />
+		<link type="text/css" rel="stylesheet" href="../css/user/register.css" />
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<!--[if lt IE9]-->
+		<script type="text/javascript" src="../js/html5shiv.min.js"></script>
+		<!--[endif]-->
+	</head>
+	<body>
+		<div class="bodyWrap">
+			<header class="header">
+				 <h1 class="title">欢迎来到百色学院校园活动风采网站</h1>
+				 <a href="index.html" class="index">返回首页</a>
+			</header>
+			<div class="userRegister">
+				<div class="zc"><a href="login.html" class="goLog">登录</a></div>
+				<div class="logo"><img src="../img/logo.png" alt="百色学院" title="百色学院"/></div>
+				<div class="userName"> 
+					<i class="ion-person"></i>&nbsp;用户名 :  <input type="text" id="userName" placeholder="输入5-10位数字和字母组合的用户名"/>
+				</div>
+				<div class="userProm"></div>
+				<div class="ident">
+					<i class="ion-android-create"></i>&nbsp;验证码 :  <input type="text" id="identCode" /><span class="showIdent">1234</span>
+				</div>
+				<div class="identPromt"></div>
+				<div class="userPwd">
+					<i class="icon ion-locked"></i>&nbsp;设置密码 :   <input type="password" id="userPwd" placeholder="请设置6-20位数字和字母组合的密码"/>
+				</div>
+				<div class="userPwdag">
+					 <i class="icon ion-locked"></i>&nbsp;确认密码 :    <input type="password" id="userPwdag" placeholder="请再次确认密码"/>
+				</div>
+				<div class="prom"></div>
+				<div class="remember">
+					<input type="checkbox" id="agree" />我已同意百色学院校园活动风采网用户服务协议
+				</div>
+				<button id="userRegister">注册</button>
+			</div>
+		</div>
+		<!--遮罩层-->
+		<div class="shadeBox hideIt"></div>
+		<div class="warning hideIt">
+			<p class="que">注册成功，是否立即登录？</p>
+			<p><span class="Ok">确定</span><span class="no">取消</span></p>
+		</div>
+		<script type="text/javascript" src="../js/register.js"></script>
+	</body>
+	<script>
+		
+	</script>
+</html>
+ 

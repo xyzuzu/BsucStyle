@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑页面|百色学院校园活动网站管理</title>
+		<meta name="Keywords" content="校园活动风采网站管理页面">
+		<meta name="Description" content="用户管理，内容管理">
+		<meta name="Author" content="zhangxiaoyan">
+		<link type="text/css" rel="stylesheet" href="../../css/base.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/ionicons.min.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/admin/admEdit.css" />
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<!--[if lt IE9]-->
+		<script type="text/javascript" src="../../js/html5shiv.min.js"></script>
+		<!--[endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header clearfix">
+				<div class="logo"><img src="../../img/bs.png" alt="百色学院" title="百色学院"/></div>
+				<h1>校园活动风采网站管理</h1>
+				<span class="admin">admin</span>
+			</header>
+			<section class="content">
+				<nav class="navAside clearfix">
+					<ul class="navList clearfix">
+						<li>用户信息管理</li>
+						<li>添加内容模块</li>
+					</ul>
+				</nav>
+				<section class="information">
+					<div class="userModule">
+						<table class="userTable">
+							<tr>
+								<th>id</th>
+								<th>userName</th>
+								<th>password</th>
+								<th>perImg</th>
+								<th>perMood</th>	
+								<td>操作</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td>1000</td>
+								<td>张组组の过敏源</td>
+								<td>zxy123456</td>
+								<td>../../img/changeBg/3.jpg</td>
+								<td>青春是段跌跌撞撞的旅行，充满着后知后觉的美丽</td>
+								<td>删除</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<div class="turnPage">
+							<span class="prevPage"><i class="icon ion-chevron-left"></i>&nbsp;上一页</span>
+							<span class="nextPage">下一页&nbsp;<i class="icon ion-chevron-right"></i></span>
+						</div>
+					</div>
+					
+					<!--编辑-->
+					<div class="editModule">
+						<form class="actEdit" method="post" action="">
+							<p>发布类型：
+								<select id="type">
+									<option>近期活动</option>
+									<option>活动预告</option>
+								</select>
+							</p>
+							<p>
+								<label for="title">
+									活动标题：<input type="text" placeholder="请输入标题" id="title" name="title"/>
+								</label>
+							</p>
+							<p>
+								<label for="time">
+									活动时间：<input type="datetime" id="time" name="time"/>
+								</label>
+							</p>
+							<p>
+								<label for="author">
+									图文作者：<input type="text" id="author" name="author"/>
+								</label>
+							</p>
+							<p>
+								<label for="source">
+									内容来源：<input type="text" id="source" name="source"/>
+								</label>		
+							</p>
+							<div>
+								<label for="article">
+									文章内容：
+									<div id="article" name="article" contenteditable="true"></div>
+								</label>
+							</div>
+							<p>上传照片：<!--<input type="image"/>--></p>
+							<button class="conEdit">发布</button>
+						</form>
+					</div>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>
