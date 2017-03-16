@@ -1,0 +1,372 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.clearfix {  
+	zoom: 1;
+}
+
+.clearfix:after {  
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-size: 1.4rem;
+	
+}
+
+.nav_right {
+	position: absolute;
+	color: white;
+	font-size: 1.6rem;
+	right: 1rem;
+	top: 45%;
+	z-index: 10000;
+}
+
+.nav_right li {
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	font-size: 1.6 rem;
+	font-weight: 600;
+}
+
+#fullpage {
+	position: relative;
+}
+
+/*firstPage*/
+
+.pageLogo {
+	padding-top: 10px;
+	/*box-sizing: border-box;*/
+	text-align: center;
+	margin-left: -100px;
+}
+
+.pageLogo img {
+	width: 30%;
+	height: 100px;
+}
+
+.motto {
+	display: inline-block;
+	width: 0;
+	height: 100px;
+}
+
+.zyxm {
+	width: 0;
+	background: url(../img/zyxm.png) no-repeat;
+	position: absolute;
+	left: 20%;
+	transition: all 1s ease;
+	
+}
+
+.firstPage.animation .zyxm{
+	animation: zyxm 1s steps(4) .1s 1 forwards;
+}
+
+.dgyj {
+	width: 0;
+	background: url(../img/dgyj.png) no-repeat;
+	position: absolute;
+	left: 60%;
+	transition: all 1s ease;
+	
+}
+
+.firstPage.animation .dgyj{
+	animation: dgyj 1s steps(4) 1.1s 1 forwards;
+}
+
+@-webkit-keyframes zyxm {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-moz-keyframes zyxm {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-ms-keyframes zyxm {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-o-keyframes zyxm {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-webkit-keyframes dgyj {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-moz-keyframes dgyj {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-ms-keyframes dgyj {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+@-o-keyframes dgyj {
+	0% {width: 0;}
+	100% {width: 280px;}
+}
+
+.firstpImg {
+	width: 60%;
+	height: 30rem;
+	margin: 10rem auto;
+	position: relative;
+	transition: all 1s ease;
+}
+
+.firstpImg img {
+	width: 100%;
+	height: 100%;
+}
+
+.imgLine {
+	position: absolute;
+	height: 0.2rem;
+	background: deepskyblue;
+}
+
+.firstpImg .lineOne {
+	width: 100%;
+	top: -0.1rem;
+	left: -10rem;
+}
+
+.topLine {
+	transform: translateX(-300px);
+	
+}
+
+.firstPage.animation .topLine{
+	animation: topLine 2s ease-in forwards;
+}
+
+.bottomLine {
+	transform: translateX(600px) translateY(30rem);
+	
+}
+
+.firstPage.animation .bottomLine{
+	animation: bottomLine 2s ease-in forwards;
+}
+
+.lineTwo{
+	position: absolute;
+	height: 100%;
+	width: 0.2rem;
+	background: deepskyblue;
+	
+}
+
+.firstPage.animation .leftLine{
+	animation: leftLine 2s ease-in forwards;
+}
+
+.leftLine{
+	left: 0;
+	top:0;
+	transform: translateY(-20rem);
+	
+}
+
+.rightLine{
+	right: 0;
+	top:0;
+	transform: translateY(20rem);
+	
+}
+.firstPage.animation .rightLine{
+	animation: rightLine 2s ease-in forwards;
+}
+
+@-webkit-keyframes topLine {
+	0% {transform: translateX(-300px);}
+	100% {transform: translateX(10rem);}
+}
+
+@-moz-keyframes topLine {
+	0% {transform: translateX(-300px);}
+	100% {transform: translateX(10rem);}
+}
+
+@-ms-keyframes topLine {
+	0% {transform: translateX(-300px);}
+	100% {transform: translateX(10rem);}
+}
+
+@-o-keyframes topLine {
+	0% {transform: translateX(-300px);}
+	100% {transform: translateX(10rem);}
+}
+
+@-webkit-keyframes bottomLine {
+	0% {transform:translateX(600px) translateY(30rem);}
+	100% {transform: translateX(10rem) translateY(30rem);}
+
+}
+
+@-moz-keyframes bottomLine {
+	0% {transform:translateX(600px) translateY(30rem);}
+	100% {transform: translateX(10rem) translateY(30rem);}
+}
+
+@-ms-keyframes bottomLine {
+	0% {transform:translateX(600px) translateY(30rem);}
+	100% {transform: translateX(10rem) translateY(30rem);}
+}
+
+@-o-keyframes bottomLine {
+	0% {transform: translateX(600px) translateY(30rem);}
+	100% {transform: translateX(10rem) translateY(30rem);}
+}
+
+@-webkit-keyframes leftLine {
+	0% {transform: translateY(-20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-moz-keyframes leftLine {
+	0% {transform: translateY(-20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-ms-keyframes leftLine {
+	0% {transform: translateY(-20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-o-keyframes leftLine {
+	0% {transform: translateY(-20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-webkit-keyframes rightLine {
+	0% {transform: translateY(20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-moz-keyframes rightLine {
+	0% {transform: translateY(20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-ms-keyframes rightLine {
+	0% {transform: translateY(20rem);}
+	100% {transform: translateY(0rem);}
+}
+
+@-o-keyframes rightLine {
+	0% {transform: translateY(20rem);}
+	100% {transform: translateY(0rem);}
+}
+/*secondPage*/
+
+.secondPage {
+	position: relative;
+	overflow: hidden;
+}
+
+.secondLeft{
+	width: 45%;
+	height: 50rem;
+	position: absolute;
+	left: 5%;
+	top:15rem;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 5rem;
+	line-height: 6rem;
+	color: white;
+}
+
+.secondRight {
+	width: 40%;
+	height: 50rem;
+	box-sizing: border-box;
+	border: 2px solid wheat;
+	box-shadow:-0.2rem -0.2rem 0.1rem 0.1rem #ccc;
+	position: absolute;
+	right: 5%;
+	top: 4.5rem;
+	perspective:800px;
+    /* 观察角度 */
+    perspective-orign:50% 50%;
+    background: wheat;
+    overflow: hidden;
+    
+}
+
+.fullBox{
+	
+	position: absolute;
+	z-index: -1;
+	background: grey;
+	transition: all 1s ease;
+	
+}
+
+.secondPage.animation .fullBox{
+	animation: bgColor 2s ease-in forwards ;
+}
+.secondRight img {
+	width: 100%;
+	height: 100%;
+	box-shadow:-0.2rem -0.2rem 0.1rem 0.1rem #ccc ;
+	transform-style:preserve-3d;
+    transform:translateX(2rem) translateY(2rem) translateZ(-2rem) ;
+}
+@-webkit-keyframes bgColor {
+	0% {width: 0;height: 0;}
+	100% {width: 100%;height: 100%;}
+}
+
+@-moz-keyframes bgColor {
+	0% {width: 0;height: 0;}
+	100% {width: 100%;height: 100%;}
+}
+
+@-ms-keyframes bgColor {
+	0% {width: 0;height: 0;}
+	100% {width: 100%;height: 100%;}
+}
+
+@-o-keyframes bgColor {
+	0% {width: 0;height: 0;}
+	100% {width: 100%;height: 100%;}
+}

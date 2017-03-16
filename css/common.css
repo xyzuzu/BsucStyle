@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+html{
+	font-size: 62.5%;
+	behavior: url('ie-css3.htc');
+}
+body{
+	font-size: 1rem;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}
+
+/*indexHeader Start*/
+
+.indexHeader {
+	position: relative;
+	width: 100%;
+	height: 10rem;
+	background: black;
+}
+
+
+/*header-logo*/
+.header-logo {
+	position: absolute;
+	left: 5%;
+	width: 25%;
+	height: 100%;
+	transition: all 1.5s;
+	animation: logo 1s linear forwards;
+	behavior: url('ie-css3.htc');
+}
+
+.logo {
+	width: 65%;
+}
+
+.actLogo {
+	width: 34%;
+	margin-left: 1%;
+	opacity: 0;
+	animation: actlogo 1s linear forwards 1s;
+	
+}
+
+.header-logo img {
+	height: 100%;
+}
+
+@-webkit-keyframes logo {
+	0% {
+		transform: translateX(-100%);
+	}
+	80% {
+		transform: translateX(10%);
+	}
+	100% {
+		transform: translateX(5%);
+	}
+}
+
+@-moz-keyframes logo {
+	0% {
+		transform: translateX(-100%);
+	}
+	80% {
+		transform: translateX(10%);
+	}
+	100% {
+		transform: translateX(5%);
+	}
+}
+
+@-ms-keyframes logo {
+	0% {
+		transform: translateX(-100%);
+	}
+	80% {
+		transform: translateX(10%);
+	}
+	100% {
+		transform: translateX(5%);
+	}
+}
+
+@-webkit-keyframes actlogo {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	60% {
+		opacity: 0.8;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes actlogo {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	60% {
+		opacity: 0.8;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-ms-keyframes actlogo {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	60% {
+		opacity: 0.8;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+/*header-Nav*/
+
+.header-Nav {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: 5%;
+}
+
+.navList {
+	width: 100%;
+	height: 6rem;
+	margin-top: 2rem;
+	list-style: none;
+}
+
+.navList li {
+	float: left;
+	width: 16%;
+	margin: auto 2%;
+	line-height: 6rem;
+	text-align: center;
+}
+
+.navList li a {
+	display: block;
+	width: 94%;
+	padding:3%;
+	height: 100%;
+	border-radius: 30%;
+	color: deepskyblue;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	font-size: 1.6rem;
+}
+@media only screen and (max-width:800px ) {
+	.navList li a {width:60px;font-size: 14px;}
+}
+
+.navList li a:hover {
+	color: white;
+	background-color: deepskyblue;
+}
+
+.navList li .navBg{
+	color: white;
+	background-color: deepskyblue;
+
+}
+/*indexHeader End*/
+
+/*footer Start*/
+footer{
+	width: 100%;
+	background: black;
+	color: #CCCCCC;
+}
+.friendlyLink{
+	width: 100%;
+	padding: 1rem;
+	border-top: .1rem solid rgba(255,255,255,0.3);
+	border-bottom:.1rem solid rgba(255,255,255,0.3);
+}
+.friendlyLink .friLinkTitle{
+	text-align: center;
+	color: burlywood;
+}
+.linkListWrap{
+	margin-top: 2rem;
+	width: 90%;
+	padding: 0 5%;
+}
+.linkList li{
+	float: left;
+	width: 20%;
+}
+.linkList li a{
+	color: skyblue;
+	font-size: 1.6rem;
+}
+.contactUs{
+	width: 100%;
+	height: 20rem;
+	padding: 2rem;
+}
+.contactUs h2{
+	font-size: 2rem;
+}
+.contact,.attention,.addPhone{
+	float: left;
+	width: 30%;
+	margin: 0 1.5%;
+}
+.attention a{
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	}
+.attention .weibo{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/icon/weibo.png) no-repeat;
+	background-size: cover;
+	
+}
+.attention .weibo:hover{
+	background: url(../img/icon/weibo1.png) no-repeat;
+	background-size: contain;
+}
+.attention .weix{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/icon/weix.png) no-repeat center center;
+	background-size: 70% 70%;
+}
+.attention .weix:hover{
+	background: url(../img/icon/weix1.png) no-repeat center center;
+	background-size: 70% 70%;
+}
+.attention{
+	position: relative;
+}
+.ewm{
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	left: 40%;
+	top: 2rem;
+	/*设置视距*/
+	transform: perspective(100rem) translateX(-1rem) translateZ(2rem);
+    /*定义3D环境*/
+    transform-style:preserve-3d;
+	border-radius: 0.5rem;
+	box-shadow: -.2rem .2rem .4rem #CCCCCC,
+				.2rem .2rem .4rem #CCCCCC,
+				.2rem -.2rem .4rem #CCCCCC,
+				.2rem .2rem .4rem #CCCCCC;
+}
+.ewm img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+}
+.contactUs .addPhone{
+	float: right;
+}
+
+footer .copyright{
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	font-size: 1.6rem;
+	color: ghostwhite;
+	background:#333333;
+}
+/*footer End*/

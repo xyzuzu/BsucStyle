@@ -1,0 +1,251 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	background:#f5f6f9;
+	font-size: 1rem;
+}
+
+/*列表内容*/
+#content{
+	width:90%;
+	min-width: 90rem;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top:1rem;
+}
+.search{
+	width: 100%;
+}
+#searKey{
+	width: 40rem;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1.4rems;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: 0.1rem solid rgba(0,0,0,0.6);
+}
+.searchBtn{
+	border: none;
+	border-radius: 1rem;
+	outline: none;
+	margin-left: 1rem;
+	width: 4rem;
+	height: 3rem;
+	text-align: center;
+	color: white;
+	background: deepskyblue;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+#con_left{
+	float: left;
+	width: 70%;
+	/*width:80rem;*/
+}
+#con_left .title{
+	height:5rem;
+	border-bottom:.2rem solid deepskyblue;
+	display: inline-block;
+}
+
+#con_detail{
+	padding:0;
+	margin:0;
+	width:100%;	
+	list-style:none;
+}
+#con_detail li{
+	/*width:74rem;
+	padding: 2rem;*/
+	width: 92%;
+	padding: 4%;
+	box-shadow:0 0 .5rem #C0C0C0;
+	margin-top:2rem;
+	background:#fff;
+}#con_detail li dl{
+	padding: 0;
+	margin:0;
+}
+#con_detail li .l{
+	float: left;
+}
+#con_detail li dl dt{
+	padding:0;
+	margin: 0;
+	width:40%;
+	height:17rem;
+}
+#con_detail li dl dt img{
+	display: block;
+	border:.2rem solid #e8e8e8;
+	width:100%;
+	height:100%;
+}
+
+#con_detail li dl dd{
+	width:60%;
+	height:17rem;
+	padding:0;
+	margin:0;	
+    padding-left:2rem;   
+}
+#con_detail li dl dd h3{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color:#444444;	
+}
+#con_detail li dl dd h3 a{
+	font-weight: 300;
+	color:#444;
+}
+#con_detail li dl dd h5{
+	padding:0;
+	margin: 0;;
+	font-weight: 200;
+    text-indent: 2em;
+    height:7.5rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+    color:#444;	
+}
+#con_detail li dl dd .pingjia{
+	margin-top:1rem ;
+	height:2rem;
+}
+#con_detail li dl dd .pingjia span{
+	border:0;
+	color:#444;
+}
+#con_detail li dl dd .pingjia span.fenlei{
+	display: inline-block;
+	width:16rem;
+	height:2rem;
+	line-height: 2rem;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#con_detail li dl dd .pingjia span.time{
+	margin-left:1rem;
+	display: inline-block;
+	height:2rem;
+	line-height: 2rem;
+	/*width:14rem;*/
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;	
+}
+#con_fenye{
+	width:100%;
+	text-align:center;
+	padding-top:4rem;
+	padding-bottom:3rem;
+}
+#con_fenye a{
+	display:inline-block;
+	width:15rem;
+	height:4rem;
+	line-height:4rem;
+	text-align: center;
+	border:.1rem solid #e8e8e8;
+	margin-left:1rem;
+	color:deepskyblue;
+	background:#fff;
+	text-decoration: none;
+	border-radius: .4rem;
+}
+#con_fenye a:hover{
+	background:deepskyblue;
+	color:#fff;
+}
+#con_fenye a.disabled{
+	background: #e8e8e8;
+}
+#con_fenye a.disabled:hover{
+	background: #e8e8e8;
+	color:deepskyblue;
+}
+#con_right{
+	width: 30%;
+	float: right;
+}
+#con_right h2{
+	display:inline-block;
+	height:5rem;
+	border-bottom: .2rem solid deepskyblue;	
+}
+#con_list{
+	padding:0; 
+	margin:0;
+	width:39.8rem;
+	list-style: none;
+	padding-top:2rem;
+	overflow: hidden;
+}
+#con_list li{
+	position:relative;
+    padding:.3rem;	
+	float: left;
+	border:.1rem solid #e8e8e8;
+	margin-bottom: 1rem;
+	margin-left:.4rem;
+	opacity:0.7;
+	box-shadow: 0 0 .3rem #C0C0C0;	
+}
+#con_list li .a1{
+	display: inline-block;
+	width:12rem;
+	height:12rem;
+}
+#con_list li img{
+	width:11.9rem;
+	height:11.9rem;
+	border:.1rem solid #e8e8e8;
+}
+#con_list li img:hover{
+	border:.1rem solid #484848;
+}
+#con_list li .a2{
+	position:absolute;
+	left:.3rem;
+	bottom:5rem;
+	color:#fff;
+	display: block;
+	width:11.9rem;
+	text-align: center;
+	font-size: 1.2rem;
+	z-index: 99;
+}
+#con_list li:hover .a2{
+	color:#fff;
+}
+#con_list li:hover{
+	opacity:1;
+}
+#con_list li.active{
+	opacity: 1;
+}
+#con_list li.active .a2{
+	color:#fff;
+}
+#con_right .con_rel{
+	width:100%;	
+}
+#con_right .con_rel h3{
+	display:inline-block;
+	height:5rem;
+	border-bottom: .2rem solid deepskyblue;
+}
+#con_right .con_rel a{
+	display: block;
+	height:3.5rem;
+	line-height: 3.5rem;
+	width:100%;
+	padding-left:2rem;
+	border-bottom: .1rem dashed #484848;	
+}

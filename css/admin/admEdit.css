@@ -1,0 +1,190 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1rem;
+	font-size: 10px;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+	background: seashell;
+}
+.header{
+	width: 100%;
+	text-align: center;
+	height: 4rem;
+	line-height: 4rem; 
+	padding: 1rem 0;
+	font-size: 2rem;
+}
+.header .logo{
+	width: 15%;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+.header .logo img{
+	width: 80%;
+	height: 100%;
+}
+.header h1{
+	width: 70%;
+	float: left;
+}
+.header .admin{
+	width: 15%;
+	float: right;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.content{
+	width: 100%;
+}
+.content .navAside{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 2rem;
+	color: black;
+	text-align: center;
+}
+.content .navAside .navList{
+	width: 100%;
+}
+.content .navAside li{
+	width: 15%;
+	float: left;
+	min-width: 15rem;
+	height: 4rem;
+	line-height: 4rem;
+	padding:0 1rem;
+	border-bottom: 0.2rem solid deepskyblue;
+	
+}
+.content .information{
+	width: 90%;
+	margin:1rem auto ;
+}
+.content .information .userModule{
+	width: 100%;
+	padding: 1rem 0;
+	display: none;
+}
+.userTable{
+	width: 100%;
+	border: 0.1rem solid rgb(0,0,0);
+	height: 100%;
+}
+.userTable tr{
+	height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 0.1rem solid black;
+}
+.userTable tr th{
+	border: 0.1rem solid black;
+}
+.userTable tr td{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	border: 0.1rem solid black;
+}
+.userTable tr:nth-child(1){
+	width: 10%;
+}
+.userTable tr:nth-child(2){
+	width: 15%;
+}
+.userTable tr:nth-child(3){
+	width: 15%;
+}
+.userTable tr:nth-child(4){
+	width: 25%;
+}
+.userTable tr:nth-child(5){
+	width: 30%;
+}
+.userTable tr:last-child{
+	width: 5%;
+	cursor: pointer;
+}
+.turnPage{
+	width: 100%;
+	font-weight: bold;
+}
+.turnPage .prevPage,.turnPage .nextPage{
+	display: inline-block;
+	width: 49%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: deepskyblue;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+/*editModule*/
+.editModule{
+	width: 90%;
+	margin: 0 auto;
+}
+.editModule .actEdit{
+	width: 100%;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.editModule .actEdit p{
+	margin: 1rem auto;
+	min-height: 3rem;
+}
+.editModule .actEdit p input{
+	width: 30rem;
+	min-height: 3rem;
+	font-size: 1.4rem;
+	padding: 0.2rem;
+	border: 0.1rem solid deepskyblue;
+	border-radius: 0.5rem;
+}
+#type{
+	width: 8rem;
+	height: 2rem;
+	line-height: 2rem;
+	border: 0.1rem solid deepskyblue;
+	border-radius: 0.5rem;
+	outline: none;
+}
+#title{
+	
+}
+.editModule .actEdit #article{
+	display: block;
+	width: 95%;
+	margin: 1rem 2.5%;
+	font-size: 1.4rem;
+	min-height: 10rem;
+	line-height: 2rem;
+	padding: 1%;
+	border: 0.1rem solid deepskyblue;
+	border-radius: 0.5rem;
+}
+.conEdit{
+	width: 50%;
+	height: 3rem;
+	line-height: 3rem;
+	margin-left: 25%;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	outline: none;
+	background: deepskyblue;
+	border: 0.1rem solid deepskyblue;
+	border-radius: 0.5rem;
+}

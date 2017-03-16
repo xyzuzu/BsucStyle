@@ -1,0 +1,122 @@
+html,body{
+				width: 100%;
+				height: 100%;
+				font-size: 62.5%;
+				
+			}
+			
+			.clearfix:after{
+				display: block;
+				content: "";
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+	.bodyWrap{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: url(../../img/loginbg.jpg) no-repeat center center;
+		background-size: 100% 100%;
+	} 
+	.header{
+		width: 100%;
+		height: 5rem;
+		line-height: 5rem;
+		background: rgba(0,0,0,0.5);
+		color: skyblue;
+		font-size: 1.6rem;
+	}
+	.header h1{
+		display: inline-block;
+		width: 70%;
+		text-align: right;
+	}
+	@media screen and (max-width:700px ) {
+		.header{
+			min-width: 660px;
+			font-size: 1.2rem;
+			height: 4rem;
+			line-height: 4rem;
+			}
+	}
+	.index{
+		display: inline-block;
+		width: 20%;
+		color: skyblue;
+		height: 100%;
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-align: right;
+		text-decoration: underline;
+	}
+	.login{
+		width: 30rem;
+		padding: 2rem;
+		background: rgba(0,0,0,0.6);
+		position: absolute;
+		left:50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-size: 1.6rem;
+		/*opacity: 0.8;
+		filter: alpha(opacity=80);*/
+		border-radius: .5rem;
+	}
+	.admName,.admPsw{
+		margin: 1rem auto;
+		color:white;
+	}
+	#admName,#admPsw{
+		width: 20rem;
+		padding-left:.5rem ;
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 1.6rem;
+		border-radius: .3rem;
+	}
+	.remember{
+		width: 100%;
+		font-size: 1rem;
+		margin: .5rem auto;
+		color: white;
+	}
+	.remember a{
+		color: sandybrown;
+		text-decoration: underline;
+	}
+	#remb{
+		width: 1.2rem;
+		height: 1.2rem;
+		border-radius: .5rem;
+		color: salmon;
+		margin-right: .5rem;
+	}
+	.remember .remb-left,.remember .remb-right{
+		width: 50%;
+		float: left;
+	}
+	.remb-right{
+		text-align: right;
+	}
+	
+	#logBtn{
+		width: 100%;
+		height: 3rem;
+		line-height: 3rem;
+		color: white;
+		font-size: 1.6rem;
+		font-weight: 600;
+		border: none;
+		border-radius: .5rem;
+		background: deepskyblue;
+		outline: none;
+		margin-top: 1.5rem;
+	}
+	#logBtn:hover{
+		background: salmon;
+	}
+	#logBtn:active{
+		background: red;
+	}
+	
