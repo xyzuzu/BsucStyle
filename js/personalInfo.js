@@ -19,14 +19,21 @@ $(function(){
 		
 	});
 	console.log(userName);
-	
-	
 			
 	
 	//perContent perNav
 	$(".perNav li").click(function(){
+		var index = $(this).index();
+		if(index == 2){
+			index = parseInt(index)-1;
+		}
+		if(index == 4){
+			index = parseInt(index)-2;
+		}
+		console.log("下标"+index)
 		$(this).addClass("liColor").siblings().removeClass("liColor");
-		$(this).find("i").addClass("ionColor").siblings().find("i").removeClass("ionColor");
+		$(this).find("i").addClass("ionColor").parent().siblings().find("i").removeClass("ionColor");
+		$(".perModule").eq(index).removeClass("displayNone").siblings().addClass("displayNone");
 	});
 	
 	var perImg = $(".perImg img").attr("src");

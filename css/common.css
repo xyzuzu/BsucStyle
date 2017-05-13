@@ -41,9 +41,6 @@ body{
 	height: 100%;
 	transition: all 1.5s;
 	animation: logo 1s linear forwards;
-	@-webkit-animation: logo 1s linear forwards;
-	@-moz-animation: logo 1s linear forwards;
-	@-ms-animation: logo 1s linear forwards;
 	behavior: url('ie-css3.htc');
 }
 
@@ -56,9 +53,6 @@ body{
 	margin-left: 1%;
 	opacity: 0;
 	animation: actlogo 1s linear forwards 1s;
-	@-webkit-animation: actlogo 1s linear forwards 1s;
-	@-moz-animation: actlogo 1s linear forwards 1s;
-	@-ms-animation: actlogo 1s linear forwards 1s;
 	
 }
 

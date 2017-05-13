@@ -70,11 +70,12 @@
 						<li id="myFollows">我的关注<i class="icon ion-ios-flame"></i></li>
 						<li></li>
 						<li id="perSetting">个人资料<i class="icon ion-ios-flame"></i></li>
-						<li></li>
-						<li id="festival">年度节日<i class="icon ion-ios-flame"></i></li>
+						<!--<li></li>
+						<li id="festival">年度节日<i class="icon ion-ios-flame"></i></li>-->
 					</ul>
 					<section>
-						<section class="myCmts" style="display: block;">
+						<!--我的评论-->
+						<section class="myCmts perModule">
 							<ul class="cmtsList">
 								<li class="liTitle clearfix"><span class="cmtTitle"><i class="icon ion-ios-pulse-strong"></i></span><span class="cmtContent"><i class="icon ion-android-textsms"></i></span>
 									<span class="cmtTime"><i class="icon ion-android-alarm-clock"></i></span><span class="cmtDel"><i class="icon ion-trash-a"></i></span></li>
@@ -87,7 +88,8 @@
 							</ul>
 							<span class="loadMore">点击加载更多</span>
 						</section>
-						<section class="myFollows" style="display: none;">
+						<!--我的关注-->
+						<section class="myFollows perModule displayNone">
 							<ul class="followList clearfix">
 								<li><img src="../img/10-01.jpg"/ alt="图片" title="图片"><span class="actName">百色学院十周年庆祝大会召开</span></li>
 								<li><img src="../img/10-01.jpg"/ alt="图片" title="图片"><span class="actName">活动名称</span></li>
@@ -98,27 +100,28 @@
 							</ul>
 							<span class="lookMore">点击加载更多</span>
 						</section>
+						<!--修改信息-->
+						<section class="perSetting perModule displayNone">
+							<label>用户名：<input type="text" class="disUserName" placeholder="张组组の过敏源" disabled="disabled"/></label>
+							<div class="changePsw"><a class="reviseBtn">修改密码</a></div>
+							<div class="revisePwd" style="display: block;">
+								初始密码：<input type="password" name="oriPwd" id="oriPwd" value="" placeholder="请输入初始密码"/>
+								重置密码：<input type="password" name="revisePwd" id="revisePwd" value="" placeholder="请输入重置密码"/>
+								
+							</div>
+							<div class="perMood">
+								<i class="ion-edit" style="color: rgba(0,0,0,0.8);"></i>&nbsp;&nbsp;一句话说明：
+								<textarea id="perMood"></textarea>
+							</div>
+							<div class="conBtns">
+								<button class="confirBtn">确定</button>
+								<button class="cancelBtn">取消</button>
+							</div>
+						</section>
+						
 					</section>
-					
-					<section class="perSetting" style="display: none;">
-						<label>用户名：<input type="text" placeholder="张组组の过敏源" disabled="disabled"/></label>
-						<a class="reviseBtn">修改密码</a>
-						<div class="revisePwd" style="display: block;">
-							初始密码：<input type="password" name="oriPwd" id="oriPwd" value="" placeholder="请输入初始密码"/>
-							重置密码：<input type="password" name="revisePwd" id="revisePwd" value="" placeholder="请输入重置密码"/>
-							
-						</div>
-						<div class="perMood">
-							<i class="ion-edit" style="color: rgba(0,0,0,0.8);"></i>&nbsp;&nbsp;一句话说明：
-							<textarea id="perMood"></textarea>
-						</div>
-						<div class="conBtns">
-							<button class="confirBtn">确定</button>
-							<button class="cancelBtn">取消</button>
-						</div>
-					</section>
+
 				</section>
-				
 			</article>
 		</div>
 		<!--content End-->
