@@ -16,7 +16,9 @@ body, input, select, button, textarea { font-size: 12px;font-family:tahoma,arial
 
 
 /*公共样式*/
-
+.displayNone{
+    display: none;
+}
 /*特殊*/
 .h0 {height: 0; line-height:0; font-size:0;}
 .ov-ellipsis { overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:block;}

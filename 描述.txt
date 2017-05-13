@@ -1,0 +1,2 @@
+使用插件：
+fullpage.js;基于JQ的carrouel（轮播图）;

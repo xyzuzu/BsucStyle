@@ -4,16 +4,17 @@ html,body{
 				font-size: 62.5%;
 				
 			}
-			
-			.clearfix:after{
-				display: block;
-				content: "";
+
+.clearfix:after{
+		display: block;
+		content: "";
 		clear: both;
 		height: 0;
 		visibility: hidden;
 	}
 	.bodyWrap{
 		width: 100%;
+		min-width: 1200px;
 		height: 100%;
 		position: relative;
 		background: url(../../img/loginbg.jpg) no-repeat center center;
@@ -21,16 +22,15 @@ html,body{
 	} 
 	.header{
 		width: 100%;
+		min-width: 1200px;
+		margin: 0 auto;
 		height: 5rem;
 		line-height: 5rem;
 		background: rgba(0,0,0,0.5);
+		text-align: center;
 		color: skyblue;
 		font-size: 1.6rem;
-	}
-	.header h1{
-		display: inline-block;
-		width: 70%;
-		text-align: right;
+		position: relative;
 	}
 	@media screen and (max-width:700px ) {
 		.header{
@@ -42,7 +42,9 @@ html,body{
 	}
 	.index{
 		display: inline-block;
-		width: 20%;
+		position: absolute;
+		top:0;
+		right:100px;
 		color: skyblue;
 		height: 100%;
 		font-size: 1.6rem;

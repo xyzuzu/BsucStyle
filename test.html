@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html ng-app="test">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style>
+			.box1{
+				width: 200px;
+				height: 100px;
+				background: skyblue;
+			}
+			#box2{
+				width: 200px;
+				height: 100px;
+				margin-top: 20px;
+				background: salmon;
+			}
+			.active{
+				background: red;
+			}
+			#d{
+				width: 200px;
+				height: 200px;
+				background:salmon ;
+			}
+		</style>
+		<script src="js/angular.js"></script>
+	</head>
+	<body ng-controller="indexCtrl">
+		
+		<div class="box1" ng-click="test()"></div>
+		<div id="box2"></div>
+		<div style="width: 100px;height: 100px;background: black;">
+			<div style="width: 50px;height: 50px;background: salmon; "></div>
+		</div>
+		<div style="width:100px;height:100px;background:pink;"></div>
+		<span style="margin-right:10px;border: 1px solid #ccc;">O(∩_∩)O哈哈~</span>
+		<div id="d" style="width: 100px;height: 100px;background: red;"></div>
+	</body>
+	<script>
+		var app = angular.module("test",[]);
+		app.controller("indexCtrl",function($scope){
+			$scope.test = function(){
+				var box1 = angular.element(".box1").addClass("active");
+			}
+		});
+		var arr = [1,2,3,"呵呵哒","str"];
+		console.log(arr);
+		
+		var a = "2.14";
+		console.log(typeof parseInt(a));
+		
+		var d = document.getElementById("d");
+		console.log(d);
+		$("#d").css("width","300px");
+		
+		//去重
+		
+		/*for( var i=3; i<20; i=i+2 ){
+			if( i%3 == 2 ){
+				i=i+1;
+			}else{
+				i=i+2;
+			}
+			console.log(i);
+		}*/
+		
+		/*for(var i=1;i<7;i=i+3){
+			
+		}
+		console.log(i);*/
+		/*for(var i=1;i<10;i=i+1){
+			if(i%2==0){
+				i=i*2;
+			}
+			console.log(i);
+		}*/
+		/*var a=1;
+		b = a;
+		b="str";
+		a=b;
+		c = a;
+		console.log(c);*/
+		
+		var n=1;
+		var m ="0";
+		var d = 2;
+		var c = m+n+d;
+		console.log(c);
+		console.log( n + 1 );
+		console.log(typeof n);
+		
+		 /*var fo = "hello";
+		 (function(){
+		 	var fd = "world";
+		 	alert(fo+fd);
+		 })();
+		 alert(fo+fd);*/
+		function add(a,b){
+			return a+b;
+		}
+		console.log(add(1,2));
+		var ab="i'm a lasagna hog".split("").reverse().join("");
+		console.log(ab);
+		
+		console.log('one');
+		setTimeout(function() {
+		  console.log('two');
+		}, 0);
+		console.log('three');
+
+		var foo = {n: 1};
+		var bar = foo;
+		foo.x = foo = {n: 2};
+		console.log(foo);
+		console.log(bar);
+		
+		for(var i=1;i<=10;i++){
+			if(i%2==0){
+				i=i+2;
+			}else{
+				i=i;
+			}
+			console.log(i);
+		}
+		console.log(i)
+ 
+	</script>
+</html>

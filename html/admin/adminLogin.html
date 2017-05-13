@@ -8,12 +8,43 @@
 		<meta name="Author" content="zhangxiaoyan">
 		<link type="text/css" rel="stylesheet" href="../../css/base.css" />
 		<link type="text/css" rel="stylesheet" href="../../css/admin/admLogin.css" />
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
 		<!--[if lt IE9]-->
 		<script type="text/javascript" src="../../js/html5shiv.min.js"></script>
 		<!--[endif]-->
 		<style>
-			
+			.header{
+				width: 100%;
+				min-width: 1200px;
+				margin: 0 auto;
+				height: 5rem;
+				line-height: 5rem;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				color: skyblue;
+				font-size: 1.6rem;
+				position: relative;
+			}
+			@media screen and (max-width:700px ) {
+				.header{
+					min-width: 660px;
+					font-size: 1.2rem;
+					height: 4rem;
+					line-height: 4rem;
+				}
+			}
+			.index{
+				display: inline-block;
+				position: absolute;
+				top:0;
+				right:100px;
+				color: skyblue;
+				height: 100%;
+				font-size: 1.6rem;
+				font-weight: bold;
+				text-align: right;
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body>
@@ -32,11 +63,15 @@
 				</div>
 				<div class="remember clearfix">
 					<div class="remb-left"><input type="checkbox" id="remb" />记住密码</div>
-					<div class="remb-right"><a href="">忘记密码</a></div>
+					<!--<div class="remb-right"><a href="">忘记密码</a></div>-->
 				</div>
 				<button id="logBtn">登录</button>
-				
 			</div>
 		</div>
+		<script>
+			$(function(){
+				
+			})
+		</script>
 	</body>
 </html>

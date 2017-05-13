@@ -94,7 +94,6 @@ $(function(){
 					
 					var obj ={type:false};
 					Location.href = "register.html";
-					
 				}else{
 					var obj = {type:true,name:$userName};
 				}
